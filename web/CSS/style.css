@@ -16,7 +16,6 @@
 
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-
 }
 
 .item
@@ -25,5 +24,3 @@
   color: green;
   justify-content: center;
 }
-
-
