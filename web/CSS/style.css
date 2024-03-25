@@ -1,11 +1,9 @@
-.center
-{
+.center {
   align-content: center;
   align-items: center;
   justify-content: center;
   padding: 10em;
 }
-
 
 .grid {
   align-content: center;
@@ -16,14 +14,10 @@
 
   /* This is better for small screens, once min() is better supported */
   /* grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); */
-
 }
 
-.item
-{
+.item {
   background-color: black;
   color: green;
   justify-content: center;
 }
-
-
