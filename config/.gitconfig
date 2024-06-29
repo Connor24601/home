@@ -1,0 +1,19 @@
+# This is Git's per-user configuration file.
+[user]
+#TODO: git secret
+#Host = 
+#	Hostname = 
+#	name = 
+#	email = 
+
+[alias]
+	graph = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	discard = restore *
+	fucked = reset --hard origin/master
+	save = stash -m
+	stashes = stash list --pretty=format:'%C(cyan)%<(12)%cr%C(reset) - %C(green)%h%C(reset) %<(70)%s'
+	where = status -s -b --show-stash --ahead-behind
+
+[credential "https://github.com"]
+	useHttpPath = true
+	helper = !/usr/local/bin/gh auth git-credential
